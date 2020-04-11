@@ -33,6 +33,7 @@ class Registation():
         self.driver.find_element(By.ID, Password).send_keys("PasswordTest1")
         self.driver.find_element(By.ID, confirmed_Password).send_keys("PasswordTest1")
         self.driver.find_element(By.XPATH, accept_Checkbox).click()
+        self.driver.find_element(By.XPATH, "/html/body/div[1]/div[2]/div/form/button").click()
 
 
 ff = Registation()
